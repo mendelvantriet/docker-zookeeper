@@ -11,9 +11,9 @@
 ## Test
 
 	docker ps --no-trunc
-	docker exec -it $CID /bin/bash
-	
-//TODO
+	docker exec -it $CID bin/zkCli.sh create /test :P
+	docker exec -it $CID bin/zkCli.sh get /test
+	docker exec -it $CID bin/zkCli.sh rmr /test
 
 ## Replicated mode
 
