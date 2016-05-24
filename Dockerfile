@@ -9,7 +9,7 @@ RUN ln -s zookeeper-3.4.8 /usr/local/zookeeper
 ADD zoo.cfg /usr/local/zookeeper/conf/
 
 WORKDIR /usr/local/zookeeper
-CMD ["bin/zkServer.sh" , "start"]
+CMD ["bin/zkServer.sh" , "start-foreground"]
 
 EXPOSE 2181 2888 3888
 
